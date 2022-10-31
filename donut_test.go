@@ -9,12 +9,12 @@ import (
 
 func TestDonut(t *testing.T) {
 	d, err := Donut(DonutOptions{
-		Width:     400,
-		Value:     34,
+		Width:     600,
+		Value:     74,
 		MaxValue:  100,
 		Color:     Blue,
 		BgColor:   Grey,
-		TextColor: Grey,
+		TextColor: DarkGrey,
 	})
 
 	// without OCR this is just a visual test

@@ -54,7 +54,7 @@ func Donut(opts DonutOptions) ([]byte, error) {
 	dc := gg.NewContext(opts.Width, opts.Width)
 	dc.DrawImage(img, 0, 0)
 	dc.SetFontFace(opts.FontFace)
-	dc.SetColor(color.Black)
+	dc.SetColor(opts.TextColor)
 
 	text := fmt.Sprintf("%2.2f", opts.Value)
 	tw, th := dc.MeasureString(text)
